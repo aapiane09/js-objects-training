@@ -34,3 +34,8 @@
 */
 
 // YOUR CODE HERE
+var daysUntilDate = function (dateToSeek){
+  var now = new Date().getTime();
+  var future = new Date(dateToSeek).getTime();
+  return Math.abs((now - future)/86400000);
+}
