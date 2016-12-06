@@ -40,10 +40,12 @@ var letterCount = function(word) {
    console.log(splitWord);
   //iterate through array and count value each string
   splitWord.forEach(function(letter){
+    //if finalObject already has a key with that name, increase value by 1
     if (finalObject[letter]) {
      finalObject[letter]++
      console.log(finalObject);
     }
+    //if no matching key, add key with initial value of 1
     else {
       finalObject[letter] = 1;
     }
