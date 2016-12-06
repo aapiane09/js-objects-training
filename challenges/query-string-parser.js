@@ -45,3 +45,25 @@
 */
 
 // YOUR CODE HERE
+var finalObject = {};
+var intrimObject = {};
+var parseQueryString = function (string) {
+  //Split key=value pairs from each other
+  var ampersandSplit = string.split("&");
+  //Split key and value pairs into separate arrays
+  var equalsSplit = ampersandSplit.map(function(valuePair){
+    return valuePair.split("=");
+  });
+  //   //here we have an array of arrays ex. [["a", "one"], ["b", "two"]];
+      // must move into object via function logging [0] and [1] as variables and transferring them
+    equalsSplit.forEach(function(index){
+    var key = index[0];
+    var value = index[1];
+    console.log(key, value);
+    finalObject[key] = value;
+  })
+    console.log(finalObject);
+}
+
+var variable = input.split("&");
+var variable = input.split("=");
