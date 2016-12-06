@@ -31,3 +31,22 @@
 */
 
 // YOUR CODE HERE
+var finalObject = {}
+var letterCount = function(word) {
+  //change majuscules to miniscules
+  var lowerCaseWord = word.toLowerCase();
+  //split word into array of its constituent letters
+  var splitWord = lowerCaseWord.split("");
+   console.log(splitWord);
+  //iterate through array and count value each string
+  splitWord.forEach(function(letter){
+    if (finalObject[letter]) {
+     finalObject[letter]++
+     console.log(finalObject);
+    }
+    else {
+      finalObject[letter] = 1;
+    }
+  })
+};
+letterCount('test');
