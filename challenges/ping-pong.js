@@ -38,3 +38,24 @@
 */
 
 // YOUR CODE HERE
+//counter to count number of steps
+var counter = 0;
+var stepNum = counter++;
+//ball and table for ball to move on
+var table = [{steps: stepNum}, null, null, null];
+//way to find the ball's location
+var ballIndex = table.findIndex(function(index){
+    return !!index;
+});
+var ballLoc = table[ballIndex];
+
+var ballForward = function(){
+
+  table[ballIndex++] = ballLoc
+})
+
+}
+
+forEach - ballLoc = table[ballIndex--]
+
+if ballLoc == true

@@ -29,3 +29,6 @@ There are a number of options for running/executing your code. They all have the
         * Tip: Type `.exit` to quit. Use `↑` and `↓` to cycle through your code history.
     + **Using the [`node some-file.js` command](http://javascript.cs.lmu.edu/notes/commandlinejs/)**
         * Tip: Use `ctrl` + `c` (shortcut) to quit "hanging" programs. And make sure to `console.log("your output")`.
+
+## Reflections
+  It's surprising how many steps that these seemingly simple tasks take. The hardest part is probably making sure that every different kind of data works in tandem with each other. It can be very hard to keep track of what is happening with some of the more built-in values as well. I'm doing my best to comment my code better, so I understand what's going on in it.

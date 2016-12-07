@@ -35,7 +35,25 @@
 
 // YOUR CODE HERE
 var daysUntilDate = function (dateToSeek){
+  //calculate UTC time of now
   var now = new Date().getTime();
+  //calculate UTC time of future date
   var future = new Date(dateToSeek).getTime();
+  // find difference in hours
   return Math.abs((now - future)/86400000);
 }
+var nameAndDates = [{
+        name : "Harry Potter",
+        birthdate : "7/31/1980"
+},
+{
+        name : "Barack Obama",
+        birthdate : "8/4/1961"
+}];
+
+var birthdayReminder = function (array){
+    array.forEach(function(bdayObject){
+      return array[bdayObject].name;
+      console.log(array[bdayObject].name)
+    })
+};
